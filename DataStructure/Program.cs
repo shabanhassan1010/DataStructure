@@ -92,12 +92,7 @@ namespace DataStructure
             #endregion
 
 
-            Animal n = new Animal(); // animal
-            n.print();
-            Animal d = new Dog(); // animal
-            d.print();
-            Animal C = new Cat(); // cat
-            d.print();
+          
 
         }
     }
