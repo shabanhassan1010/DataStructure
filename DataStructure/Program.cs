@@ -1,5 +1,4 @@
-﻿
-namespace DataStructure
+﻿namespace DataStructure
 {
     public class Program
     {
@@ -91,8 +90,19 @@ namespace DataStructure
 
             #endregion
 
+            #region Calling Stack
 
-          
+            Stack<int> stack = new Stack<int>(5);
+
+            stack.Push(10);
+            stack.Push(20);
+            stack.Push(30);
+
+            Console.WriteLine(stack.Pop()); // 30
+            Console.WriteLine(stack.Pop()); // 20
+            Console.WriteLine(stack.Pop()); // 10
+
+            #endregion
 
         }
     }
