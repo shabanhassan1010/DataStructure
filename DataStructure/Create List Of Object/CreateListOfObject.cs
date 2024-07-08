@@ -14,7 +14,7 @@ namespace DataStructure.NewFolder
         Freelance
     }
     // Class Definition
-    public class CreateListOfObject : IComparable<CreateListOfObject>
+    public class CreateListOfObject : IComparable<CreateListOfObject> 
     {
         // Properties
         public int EmployeeNo { get; set; }
