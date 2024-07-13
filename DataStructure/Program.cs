@@ -96,16 +96,29 @@ namespace DataStructure
 
             #region Calling Stack
 
-            //Stack<int> stack = new Stack<int>(3);
+            Stack<int> stack = new Stack<int>(10);
 
-            //stack.Push(10);
-            //stack.Push(20);
-            //stack.Push(30); // top so he is the last element
+            stack.PUSH(10);
+            stack.PUSH(20);
+            stack.PUSH(30);
+            stack.PUSH(40); 
+            stack.PUSH(50); // top so he is the last element
 
-            //Console.WriteLine(stack.Pop()); // 30
-            //Console.WriteLine(stack.Pop()); // 20
-            //Console.WriteLine(stack.Pop()); // 10
+            Console.WriteLine($"Stack Top:   {stack.StackTop()}"); // 50
+            Console.WriteLine($"Stack Full:  {stack.IsFull()}"); 
+            Console.WriteLine($"Stack Empty: {stack.IsEmpty()}"); // false
+            Console.WriteLine($"Stack Size:  {stack.StackSize()}");
 
+            stack.ClearStack();
+            Console.WriteLine($"Stack Empty:  {stack.IsEmpty()}"); // true
+
+            Console.WriteLine();
+
+            Console.WriteLine(stack.POP()); // 10
+            Console.WriteLine(stack.POP()); // 20
+            Console.WriteLine(stack.POP()); // 30
+            Console.WriteLine(stack.POP()); // 40
+            Console.WriteLine(stack.POP()); // 50
             #endregion
 
             #region GenericList
