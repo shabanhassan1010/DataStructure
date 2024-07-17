@@ -4,14 +4,14 @@ using System.Collections;
 
 namespace DataStructure
 {
-   public class Stack <T>
+   public class Stackk <T>
    {
         private T[] entries;
         private int top;
         private int maxSize;
 
         // Constructor to initialize the stack with a given size
-        public Stack(int size)
+        public Stackk(int size)
         {
             // Sets the maximum size of the stack
             maxSize = size; 
@@ -90,6 +90,10 @@ namespace DataStructure
                 top = -1;
                 Console.WriteLine("Stack has been cleared Ya broo");
             }
+        }
+        public void CopyStack(Stack stack)
+        {
+
         }
     }
 }

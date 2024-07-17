@@ -1,6 +1,7 @@
 ﻿using DataStructure.Create_List_Of_Object;
 using DataStructure.NewFolder;
 using System.Diagnostics;
+using static DataStructure.ENUMSSS;
 
 namespace DataStructure
 {
@@ -96,29 +97,31 @@ namespace DataStructure
 
             #region Calling Stack
 
-            Stack<int> stack = new Stack<int>(10);
+            //Stack<int> stack = new Stack<int>(10);
 
-            stack.PUSH(10);
-            stack.PUSH(20);
-            stack.PUSH(30);
-            stack.PUSH(40); 
-            stack.PUSH(50); // top so he is the last element
+            //stack.PUSH(10);
+            //stack.PUSH(20);
+            //stack.PUSH(30);
+            //stack.PUSH(40);
+            //stack.PUSH(50); // top so he is the last element
 
-            Console.WriteLine($"Stack Top:   {stack.StackTop()}"); // 50
-            Console.WriteLine($"Stack Full:  {stack.IsFull()}"); 
-            Console.WriteLine($"Stack Empty: {stack.IsEmpty()}"); // false
-            Console.WriteLine($"Stack Size:  {stack.StackSize()}");
+            //Console.WriteLine($"Stack Top:   {stack.StackTop()}"); // 50
+            //Console.WriteLine($"Stack Full:  {stack.IsFull()}");
+            //Console.WriteLine($"Stack Empty: {stack.IsEmpty()}"); // false
+            //Console.WriteLine($"Stack Size:  {stack.StackSize()}");
 
-            stack.ClearStack();
-            Console.WriteLine($"Stack Empty:  {stack.IsEmpty()}"); // true
+            //stack.ClearStack();
+            //Console.WriteLine($"Stack Empty:  {stack.IsEmpty()}"); // true
 
-            Console.WriteLine();
+            //Console.WriteLine();
 
-            Console.WriteLine(stack.POP()); // 10
-            Console.WriteLine(stack.POP()); // 20
-            Console.WriteLine(stack.POP()); // 30
-            Console.WriteLine(stack.POP()); // 40
-            Console.WriteLine(stack.POP()); // 50
+            //Console.WriteLine(stack.POP()); // 10
+            //Console.WriteLine(stack.POP()); // 20
+            //Console.WriteLine(stack.POP()); // 30
+            //Console.WriteLine(stack.POP()); // 40
+            //Console.WriteLine(stack.POP()); // 50
+
+
             #endregion
 
             #region GenericList
@@ -133,36 +136,40 @@ namespace DataStructure
 
             #region Create List Of Object
 
-            //CreateListOfObject empolyee1 = new CreateListOfObject();
+            //Employee empolyee1 = new Employee();
             //empolyee1.EmployeeNo = 1;
             //empolyee1.FullName = "Shaban";
             //empolyee1.StartSalary = 200000;
             //empolyee1.WorkingHoursPerWeek = 20;
             //empolyee1.Contract = ContractType.FullTime;
-            //CreateListOfObject empolyee2 = new CreateListOfObject();
+
+            //Employee empolyee2 = new Employee();
             //empolyee2.EmployeeNo = 2;
             //empolyee2.FullName = "Ali";
             //empolyee2.StartSalary = 14000;
             //empolyee2.WorkingHoursPerWeek = 40;
             //empolyee2.Contract = ContractType.PartTime;
+
             ////  Create List from Instance(My Class)
-            //List<CreateListOfObject> EmployeeList = new List<CreateListOfObject>();
+            //List<Employee> EmployeeList = new List<Employee>();
             //// Now I can Add Item on My List
             //EmployeeList.Add(empolyee1);
             //EmployeeList.Add(empolyee2);
-            //// I can Add in List without i don't have Any instance  
-            //// but Must Create paramterize constructor
-            ////EmployeeList.Add(new CreateListOfObject());     // now he is empty so i Must Full it
-            //EmployeeList.Add(new CreateListOfObject(3, "Mohamed" , 15000 , 30 , ContractType.Freelance));
+
+            // I can Add in List without i don't have Any instance  
+            // but Must Create paramterize constructor
+            // EmployeeList.Add(new CreateListOfObject());     // now he is empty so i Must Full it
+            //EmployeeList.Add(new Employee(3, "Mohamed", 15000, 30, ContractType.Freelance));
+            //EmployeeList.Add(new Employee(4, "Mostafa", 20000, 40, ContractType.FullTime));
 
             //SortByName sortByName = new SortByName();
             //EmployeeList.Sort(sortByName);
-            //foreach (CreateListOfObject emp in EmployeeList)
+            //foreach (Employee emp in EmployeeList)
             //{
             //    Console.WriteLine($" EmployeeNo:{emp.EmployeeNo}\n FullName:{emp.FullName}\n StartSalary:{emp.StartSalary}\n WorkingHoursPerWeek:{emp.WorkingHoursPerWeek}\n Contract:{emp.Contract}\n ");
             //    Console.WriteLine();
             //}
-            ////EmployeeList.Sort(); // so Must I mplement interface called Icomparable in my class
+            //EmployeeList.Sort(); // so Must I mplement interface called Icomparable in my class
 
             #endregion
 
@@ -208,7 +215,33 @@ namespace DataStructure
 
             #endregion
 
+            #region How to Convert Enum into List
 
+            //var list = Enum.GetValues(typeof(languages)).Cast<languages>().ToList();
+            //// another Solution 
+            //var list2 = (Enum.GetValues(typeof(languages)) as IEnumerable<languages>).ToList();
+            //foreach (var item in list)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //foreach (var item in list2)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region Monotonic_Increasing_Stack
+
+            Monotonic_Increasing_Stack mo = new Monotonic_Increasing_Stack();
+
+            List<int> nums = new List<int> { 1 , 2 ,3 , 4, 5 ,7 ,5 ,8 ,9,8}; // 1 2 3 4 5 5 8 8 
+            List<int> result = mo.Monotonic(nums);
+            foreach (var item in result)
+            {
+                Console.Write($"{item}\t");
+            }
+            #endregion
         }
     }
 }

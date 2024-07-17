@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace DataStructure.Create_List_Of_Object
 {
-    public class SortByName : IComparer<CreateListOfObject>
+    public class SortByName : IComparer<Employee>
     {
         // Implementing the Compare method from IComparer<T>
-        public int Compare(CreateListOfObject x, CreateListOfObject y)
+        public int Compare(Employee x, Employee y)
         {
             // Null checks to handle potential null values
             if (x == null && y == null)
