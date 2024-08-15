@@ -91,9 +91,5 @@ namespace DataStructure
                 Console.WriteLine("Stack has been cleared Ya broo");
             }
         }
-        public void CopyStack(Stack stack)
-        {
-
-        }
     }
 }

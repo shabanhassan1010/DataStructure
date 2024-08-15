@@ -1,9 +1,4 @@
-﻿using DataStructure.Create_List_Of_Object;
-using DataStructure.NewFolder;
-using System.Diagnostics;
-using static DataStructure.ENUMSSS;
-
-namespace DataStructure
+﻿namespace DataStructure
 {
     public class Program
     {
@@ -218,8 +213,10 @@ namespace DataStructure
             #region How to Convert Enum into List
 
             //var list = Enum.GetValues(typeof(languages)).Cast<languages>().ToList();
+
             //// another Solution 
             //var list2 = (Enum.GetValues(typeof(languages)) as IEnumerable<languages>).ToList();
+
             //foreach (var item in list)
             //{
             //    Console.WriteLine(item);
@@ -233,15 +230,38 @@ namespace DataStructure
 
             #region Monotonic_Increasing_Stack
 
-            Monotonic_Increasing_Stack mo = new Monotonic_Increasing_Stack();
+            //Monotonic_Increasing_Stack mo = new Monotonic_Increasing_Stack();
 
-            List<int> nums = new List<int> { 1 , 2 ,3 , 4, 5 ,7 ,5 ,8 ,9,8}; // 1 2 3 4 5 5 8 8 
-            List<int> result = mo.Monotonic(nums);
-            foreach (var item in result)
-            {
-                Console.Write($"{item}\t");
-            }
+            //List<int> nums = new List<int> { 1 , 2 ,3 , 4, 5 ,7 ,5 ,8 ,9,8}; // 1 2 3 4 5 5 8 8 
+            //List<int> result = mo.Monotonic(nums);
+            //foreach (var item in result)
+            //{
+            //    Console.Write($"{item}\t");
+            //}
             #endregion
+
+            #region Array
+
+            //Arr<int> a1 = new Arr<int>(3);
+            //a1.Add(10);
+            //a1.Add(20);
+            //a1.Display();
+            //a1.getLegth();
+            //a1.getSize();
+            //Console.WriteLine();
+            //a1.Insert(2, 30);
+            //a1.Display();
+            //a1.getLegth();
+            //a1.getSize();
+            //Console.WriteLine();
+            //a1.Delete(0);
+            //a1.Delete(1);
+            //a1.Display();
+            //a1.getLegth();
+            //a1.getSize();
+
+            #endregion
+
         }
     }
 }
