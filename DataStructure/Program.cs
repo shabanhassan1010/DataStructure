@@ -262,6 +262,25 @@
 
             #endregion
 
+            // Advanced Topics
+            #region Enumerables
+
+            //Employeee e = new Employeee();
+            //e.AddPayItems("Basic Salary", 1000);
+            //e.AddPayItems("Benfits", 3000);
+            //e.AddPayItems("Housing", 2000);
+            //foreach (var item in e)
+            //{
+            //    Console.WriteLine($"{item.Name} : {item.Value}");
+            //}
+            //Console.WriteLine("**************************************");
+            //for (int i = 0; i < e.Count(); i++)
+            //{
+            //    Console.WriteLine($"{e[i].Name} {e[i].Value}");
+            //}
+
+            #endregion
+
         }
     }
 }

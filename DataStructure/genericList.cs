@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataStructure
+﻿namespace DataStructure
 {
     public class genericList
     {
@@ -44,9 +37,9 @@ namespace DataStructure
                 Console.WriteLine(item);
             }
         }
-        public static void Display(string[] list)
+        public static void Display(string[] array)
         {
-            foreach (var item in list)
+            foreach (var item in array)
             {
                 Console.WriteLine(item);
             }
