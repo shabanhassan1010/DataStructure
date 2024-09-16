@@ -1,4 +1,6 @@
-﻿namespace DataStructure
+﻿using DataStructure.Linked_List;
+
+namespace DataStructure
 {
     public class Program
     {
@@ -262,7 +264,7 @@
 
             #endregion
 
-            // Advanced Topics
+            //Advanced Topics
             #region Enumerables
 
             //Employeee e = new Employeee();
@@ -280,6 +282,30 @@
             //}
 
             #endregion
+
+            #region Linked List
+            linkedlist list = new linkedlist();
+            if (list.IsEmpty())
+            {
+                Console.WriteLine("list is empty");
+            }
+            else
+            {
+                Console.WriteLine($"{list.count()}");
+            }
+            Console.WriteLine("Enter Num of item:      ");
+            int Numofitem = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < Numofitem; i++)
+            {
+                Console.WriteLine("Enter Item:      ");
+                int num = int.Parse(Console.ReadLine());
+                list.InsertFirst(num);
+                list.Display();
+            }
+            Console.WriteLine(list.count());
+            #endregion
+
 
         }
     }
