@@ -31,9 +31,8 @@ namespace DataStructure.Advanced_Topics.Enumerables
         public IEnumerator<PayItems> GetEnumerator() // Impilict Implementions
         {
             // IEnumerator<PayItems> : is My iterator 
-            // This Function will excute with just foreach loop and if i live to use for loop i will implement
-            // [1]IEnumerable<PayItems>   [2] Expilict Implementions
-
+            // This Function will excute with just foreach loop and if i love to use for loop, I will implement
+            // [1]IEnumerable<PayItems>   [2] Expilict Implementi
             foreach (var item in _PayItems)
                 yield return item;
         }

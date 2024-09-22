@@ -1,4 +1,5 @@
 ﻿using DataStructure.Advanced_Topics.Enumerables;
+using DataStructure.Enumerables;
 
 namespace DataStructure
 {
@@ -267,8 +268,12 @@ namespace DataStructure
             //Advanced Topics
             #region Enumerables
 
+            TestYield test = new TestYield();
+            foreach (var item in test)
+            {
+                Console.WriteLine(item);
+            }
             Employeee e = new Employeee();
-
             e.AddPayItems("Basic Salary", 1000);
             e.AddPayItems("Benfits", 3000);
             e.AddPayItems("Housing", 2000);
