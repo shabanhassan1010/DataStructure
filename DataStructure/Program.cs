@@ -1,4 +1,6 @@
-﻿namespace DataStructure
+﻿using DataStructure.Advanced_Topics.Enumerables;
+
+namespace DataStructure
 {
     public class Program
     {
@@ -265,19 +267,22 @@
             //Advanced Topics
             #region Enumerables
 
-            //Employeee e = new Employeee();
-            //e.AddPayItems("Basic Salary", 1000);
-            //e.AddPayItems("Benfits", 3000);
-            //e.AddPayItems("Housing", 2000);
-            //foreach (var item in e)
-            //{
-            //    Console.WriteLine($"{item.Name} : {item.Value}");
-            //}
-            //Console.WriteLine("**************************************");
-            //for (int i = 0; i < e.Count(); i++)
-            //{
-            //    Console.WriteLine($"{e[i].Name} {e[i].Value}");
-            //}
+            Employeee e = new Employeee();
+
+            e.AddPayItems("Basic Salary", 1000);
+            e.AddPayItems("Benfits", 3000);
+            e.AddPayItems("Housing", 2000);
+
+            Console.WriteLine("***************** Using Foreach *********************");
+            foreach (var item in e)
+            {
+                Console.WriteLine($"{item.Name} : {item.Value}");
+            }
+            Console.WriteLine("***************** Using For Loop *********************");
+            for (int i = 0; i < e.Count(); i++)
+            {
+                Console.WriteLine($"{e[i].Name} {e[i].Value}");
+            }
 
             #endregion
 
