@@ -65,7 +65,6 @@
             else
                 Console.WriteLine("Out Of Range");
         }
-
         public void Delete(int index)
         {
             if (length >= 0 && index < length)

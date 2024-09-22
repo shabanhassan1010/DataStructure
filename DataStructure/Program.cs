@@ -1,6 +1,4 @@
-﻿using DataStructure.Linked_List;
-
-namespace DataStructure
+﻿namespace DataStructure
 {
     public class Program
     {
@@ -284,28 +282,42 @@ namespace DataStructure
             #endregion
 
             #region Linked List
-            linkedlist list = new linkedlist();
-            if (list.IsEmpty())
-            {
-                Console.WriteLine("list is empty");
-            }
-            else
-            {
-                Console.WriteLine($"{list.count()}");
-            }
-            Console.WriteLine("Enter Num of item:      ");
-            int Numofitem = int.Parse(Console.ReadLine());
+            //linkedlist list = new linkedlist();
+            //if (list.IsEmpty())
+            //{
+            //    Console.WriteLine("list is empty");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"{list.count()}");
+            //}
+            //Console.WriteLine("Enter Num of item:      ");
+            //int Numofitem = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i < Numofitem; i++)
-            {
-                Console.WriteLine("Enter Item:      ");
-                int num = int.Parse(Console.ReadLine());
-                list.InsertFirst(num);
-                list.Display();
-            }
-            Console.WriteLine(list.count());
+            //for (int i = 0; i < Numofitem; i++)
+            //{
+            //    Console.WriteLine("Enter Item:      ");
+            //    int num = int.Parse(Console.ReadLine());
+            //    list.InsertFirst(num);
+            //    list.Display();
+            //}
+            //Console.WriteLine(list.count());
             #endregion
 
+            #region GenericList
+
+            //var List = new GenericList<int>();
+            //List.Add(1);
+            //List.Add(2);
+            //List.Remove(1);
+            //List.display();
+
+            //GenericConstraint.Add(2, 4);
+            //GenericConstraint.Add(2, 4.5);
+            //GenericConstraint.Add(2, 4434343434343434345);
+            //GenericConstraint.Add(24.5, 4434343434343434345);
+
+            #endregion
 
         }
     }
